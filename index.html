@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <title>Calendar Challenge</title>
+</head>
+
+<body>
+
+    <!-- header with title and current date -->
+    <header>
+        <h1 class="d-flex justify-content-center">Calendar App</h1>
+        <p id="time"></p>
+    </header>
+
+    <!-- main section including each hour slot -->
+    <main class="container">
+        <div style="height:100px;" class="row">
+
+            <!-- 8am time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">8am</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 9am time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">9am</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 10am time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">10am</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 11am time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">11am</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 12pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">12pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 1pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">1pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 2pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">2pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 3pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">3pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 4pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">4pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- 5pm time slot -->
+            <div class="d-flex w-100 h-50 bg-dark mb-3">
+                <p class="text-light m-2">5pm</p>
+                <input type="text" class="h-100 w-100 bg-dark border-0 text-light ml-2">
+            </div>
+
+            <!-- save tasks button -->
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-success btn-lg mb-3 text-center" id="save-tasks">Save-Tasks</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
