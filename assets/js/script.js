@@ -13,6 +13,20 @@ const fourPm = moment().set('hour', 16);
 const fivePm = moment().set('hour', 17);
 const sixPm = moment().set('hour', 18);
 
+// selectors for all save buttons (did this as global variables so i can use them outside of function and don't have to define them again).
+const eightAmBtn = document.querySelector('#eightAmBtn');
+const nineAmBtn = document.querySelector('#nineAmBtn');
+const tenAmBtn = document.querySelector('#tenAmBtn');
+const elevenAmBtn = document.querySelector('#elevenAmBtn');
+const twelvePmBtn = document.querySelector('#twelvePmBtn');
+const onePmBtn = document.querySelector('#onePmBtn');
+const twoPmBtn = document.querySelector('#twoPmBtn');
+const threePmBtn = document.querySelector('#threePmBtn');
+const fourPmBtn = document.querySelector('#fourPmBtn');
+const fivePmBtn = document.querySelector('#fivePmBtn');
+const sixPmBtn = document.querySelector('#sixPmBtn');
+
+
 // function to check time and see if time has passed, functions interval is set to 1 minute
 function checkTime() {
 
@@ -22,8 +36,9 @@ function checkTime() {
     if (moment().isAfter(eightAm)) {
         eightAmEl.style.backgroundColor = 'red';
         eightAmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         eightAmElInput.style.display = 'none';
+        eightAmBtn.style.visibility = 'hidden';
     } else {
         eightAmEl.style.backgroundColor = 'green';
         eightAmElInput.style.backgroundColor = 'green';
@@ -35,8 +50,9 @@ function checkTime() {
     if (moment().isAfter(nineAm)) {
         nineAmEl.style.backgroundColor = 'red';
         nineAmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         nineAmElInput.style.display = 'none';
+        nineAmBtn.style.visibility = 'hidden';
     } else {
         nineAmEl.style.backgroundColor = 'green';
         nineAmElInput.style.backgroundColor = 'green';
@@ -49,8 +65,9 @@ function checkTime() {
     if (moment().isAfter(tenAm)) {
         tenAmEl.style.backgroundColor = 'red';
         tenAmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         tenAmElInput.style.display = 'none';
+        tenAmBtn.style.visibility = 'hidden';
     } else {
         tenAmEl.style.backgroundColor = 'green';
         tenAmElInput.style.backgroundColor = 'green';
@@ -63,8 +80,9 @@ function checkTime() {
     if (moment().isAfter(elevenAm)) {
         elevenAmEl.style.backgroundColor = 'red';
         elevenAmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         elevenAmElInput.style.display = 'none';
+        elevenAmBtn.style.visibility = 'hidden';
     } else {
         elevenAmEl.style.backgroundColor = 'green';
         elevenAmElInput.style.backgroundColor = 'green';
@@ -77,8 +95,9 @@ function checkTime() {
     if (moment().isAfter(twelvePm)) {
         twelvePmEl.style.backgroundColor = 'red';
         twelvePmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         twelvePmElInput.style.display = 'none';
+        twelvePmBtn.style.visibility = 'hidden';
     } else {
         twelvePmEl.style.backgroundColor = 'green';
         twelvePmElInput.style.backgroundColor = 'green';
@@ -91,8 +110,9 @@ function checkTime() {
     if (moment().isAfter(onePm)) {
         onePmEl.style.backgroundColor = 'red';
         onePmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         onePmElInput.style.display = 'none';
+        onePmBtn.style.visibility = 'hidden';
     } else {
         onePmEl.style.backgroundColor = 'green';
         onePmElInput.style.backgroundColor = 'green';
@@ -105,8 +125,9 @@ function checkTime() {
     if (moment().isAfter(twoPm)) {
         twoPmEl.style.backgroundColor = 'red';
         twoPmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         twoPmElInput.style.display = 'none';
+        twoPmBtn.style.visibility = 'hidden';
     } else {
         twoPmEl.style.backgroundColor = 'green';
         twoPmElInput.style.backgroundColor = 'green';
@@ -119,8 +140,9 @@ function checkTime() {
     if (moment().isAfter(threePm)) {
         threePmEl.style.backgroundColor = 'red';
         threePmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         threePmElInput.style.display = 'none';
+        threePmBtn.style.visibility = 'hidden';
     } else {
         threePmEl.style.backgroundColor = 'green';
         threePmElInput.style.backgroundColor = 'green';
@@ -133,8 +155,9 @@ function checkTime() {
     if (moment().isAfter(fourPm)) {
         fourPmEl.style.backgroundColor = 'red';
         fourPmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         fourPmElInput.style.display = 'none';
+        fourPmBtn.style.visibility = 'hidden';
     } else {
         fourPmEl.style.backgroundColor = 'green';
         fourPmElInput.style.backgroundColor = 'green';
@@ -147,8 +170,9 @@ function checkTime() {
     if (moment().isAfter(fivePm)) {
         fivePmEl.style.backgroundColor = 'red';
         fivePmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         fivePmElInput.style.display = 'none';
+        fivePmBtn.style.visibility = 'hidden';
     } else {
         fivePmEl.style.backgroundColor = 'green';
         fivePmElInput.style.backgroundColor = 'green';
@@ -160,8 +184,9 @@ function checkTime() {
     if (moment().isAfter(sixPm)) {
         sixPmEl.style.backgroundColor = 'red';
         sixPmElInput.style.backgroundColor = 'red';
-        // added display none below so that once time passes, you can no longer input a task
+        // added display none below so that once time passes, you can no longer input a task and save task button disappears
         sixPmElInput.style.display = 'none';
+        sixPmBtn.style.visibility = 'hidden';
     } else {
         sixPmEl.style.backgroundColor = 'green';
         sixPmElInput.style.backgroundColor = 'green';
@@ -169,31 +194,132 @@ function checkTime() {
 
 
 };
-
-allNames = []
-
-function submit() {
-    var input8 = document.getElementById("sixPmElInput").value;
-    var allNames = JSON.parse(localStorage.getItem("allNames")) || [];
-    allNames.push(input8);
-    localStorage.setItem("allNames", JSON.stringify(allNames));
-    document.getElementById("sixPmElInput").value = '';
-    document.getElementById("sixPmEl").textContent = localStorage.getItem("allNames");
-}
-
-document.getElementById("sixPmElInput").textContent = localStorage.getItem("allNames");
-
+// set interval for color code checkTime function
 setInterval(checkTime, 1000 * 60);
 checkTime();
 
-// '#eightAmElInput', '#nineAmElInput', '#tenAmElInput', '#elevenAmElInput', '#twelvePmElInput', '#onePmElInput', '#twoPmElInput', '#threePmElInput', '#fourPmElInput', '#fivePmElInput'
 
-// const nineAm = new Date('June 7, 2022 09:00:00');
-// const tenAm = new Date('June 7, 2022 10:00:00');
-// const elevenAm = new Date('June 7, 2022 11:00:00');
-// const twelvePm = new Date('June 7, 2022 12:00:00');
-// const onePm = new Date('June 7, 2022 13:00:00');
-// const twoPm = new Date('June 7, 2022 14:00:00');
-// const threePm = new Date('June 7, 2022 15:00:00');
-// const fourPm = new Date('June 7, 2022 16:00:00');
-// const fivePm = new Date('June 7, 2022 17:00:00');
+
+// 8am localStorage set/getitem
+let eightAmVar = document.querySelector('#eightAmElInput');
+
+eightAmVar.value = localStorage.getItem('tasks8');
+
+eightAmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks8', eightAmVar.value)
+});
+
+
+// 9am localStorage set/getitem
+let nineAmVar = document.querySelector('#nineAmElInput');
+
+nineAmVar.value = localStorage.getItem('tasks9');
+
+nineAmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks9', nineAmVar.value)
+});
+
+
+// 10am localStorage set/getitem
+let tenAmVar = document.querySelector('#tenAmElInput');
+
+tenAmVar.value = localStorage.getItem('tasks10');
+
+tenAmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks10', tenAmVar.value)
+});
+
+
+// 11am localStorage set/getitem
+let elevenAmVar = document.querySelector('#elevenAmElInput');
+
+elevenAmVar.value = localStorage.getItem('tasks11');
+
+elevenAmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks11', elevenAmVar.value)
+});
+
+
+// 12pm localStorage set/getitem
+let twelvePmVar = document.querySelector('#twelvePmElInput');
+
+twelvePmVar.value = localStorage.getItem('tasks12');
+
+twelvePmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks12', twelvePmVar.value)
+});
+
+
+// 1pm localStorage set/getitem
+let onePmVar = document.querySelector('#onePmElInput');
+
+onePmVar.value = localStorage.getItem('tasks1');
+
+onePmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks1', onePmVar.value)
+});
+
+
+// 2pm localStorage set/getitem
+let twoPmVar = document.querySelector('#twoPmElInput');
+
+twoPmVar.value = localStorage.getItem('tasks2');
+
+twoPmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks2', twoPmVar.value)
+});
+
+
+// 3pm localStorage set/getitem
+let threePmVar = document.querySelector('#threePmElInput');
+
+threePmVar.value = localStorage.getItem('tasks3');
+
+threePmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks3', threePmVar.value)
+});
+
+
+// 4pm localStorage set/getitem
+let fourPmVar = document.querySelector('#fourPmElInput');
+
+fourPmVar.value = localStorage.getItem('tasks4');
+
+fourPmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks4', fourPmVar.value)
+});
+
+
+// 5pm localStorage set/getitem
+let fivePmVar = document.querySelector('#fivePmElInput');
+
+fivePmVar.value = localStorage.getItem('tasks5');
+
+fivePmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks5', fivePmVar.value)
+});
+
+
+// 6pm localStorage set/getitem
+let sixPmVar = document.querySelector('#sixPmElInput');
+
+sixPmVar.value = localStorage.getItem('tasks6');
+
+sixPmBtn.addEventListener('click', event => {
+    localStorage.setItem('tasks6', sixPmVar.value)
+});
+
+
+
+
+function clearStorage() {
+    if (moment().isAfter(sixPm)) {
+        localStorage.clear();
+    } else {
+        console.log("it's not after 6 yet");
+    }
+};
+
+// set interval for clear storage function
+setInterval(clearStorage, 1000 * 60);
+clearStorage();
