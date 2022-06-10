@@ -1,17 +1,17 @@
 // simple jquery method using moment.js to show time with #time id selected and .text
 $("#time").text(moment().format('ddd MMM Do, YYYY'));
 
-const eightAm = moment().set('hour', 8);
-const nineAm = moment().set('hour', 9);
-const tenAm = moment().set('hour', 10);
-const elevenAm = moment().set('hour', 11);
-const twelvePm = moment().set('hour', 12);
-const onePm = moment().set('hour', 13);
-const twoPm = moment().set('hour', 14);
-const threePm = moment().set('hour', 15);
-const fourPm = moment().set('hour', 16);
-const fivePm = moment().set('hour', 17);
-const sixPm = moment().set('hour', 18);
+const eightAm = moment().set('hour', 9);
+const nineAm = moment().set('hour', 10);
+const tenAm = moment().set('hour', 11);
+const elevenAm = moment().set('hour', 12);
+const twelvePm = moment().set('hour', 13);
+const onePm = moment().set('hour', 14);
+const twoPm = moment().set('hour', 15);
+const threePm = moment().set('hour', 16);
+const fourPm = moment().set('hour', 17);
+const fivePm = moment().set('hour', 18);
+const sixPm = moment().set('hour', 19);
 
 // selectors for all save buttons (did this as global variables so i can use them outside of function and don't have to define them again).
 const eightAmBtn = document.querySelector('#eightAmBtn');
@@ -37,7 +37,6 @@ function checkTime() {
         eightAmEl.style.backgroundColor = 'red';
         eightAmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        eightAmElInput.style.display = 'none';
         eightAmBtn.style.visibility = 'hidden';
     } else {
         eightAmEl.style.backgroundColor = 'green';
@@ -51,7 +50,6 @@ function checkTime() {
         nineAmEl.style.backgroundColor = 'red';
         nineAmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        nineAmElInput.style.display = 'none';
         nineAmBtn.style.visibility = 'hidden';
     } else {
         nineAmEl.style.backgroundColor = 'green';
@@ -66,7 +64,6 @@ function checkTime() {
         tenAmEl.style.backgroundColor = 'red';
         tenAmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        tenAmElInput.style.display = 'none';
         tenAmBtn.style.visibility = 'hidden';
     } else {
         tenAmEl.style.backgroundColor = 'green';
@@ -81,7 +78,6 @@ function checkTime() {
         elevenAmEl.style.backgroundColor = 'red';
         elevenAmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        elevenAmElInput.style.display = 'none';
         elevenAmBtn.style.visibility = 'hidden';
     } else {
         elevenAmEl.style.backgroundColor = 'green';
@@ -96,7 +92,6 @@ function checkTime() {
         twelvePmEl.style.backgroundColor = 'red';
         twelvePmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        twelvePmElInput.style.display = 'none';
         twelvePmBtn.style.visibility = 'hidden';
     } else {
         twelvePmEl.style.backgroundColor = 'green';
@@ -111,7 +106,6 @@ function checkTime() {
         onePmEl.style.backgroundColor = 'red';
         onePmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        onePmElInput.style.display = 'none';
         onePmBtn.style.visibility = 'hidden';
     } else {
         onePmEl.style.backgroundColor = 'green';
@@ -126,7 +120,6 @@ function checkTime() {
         twoPmEl.style.backgroundColor = 'red';
         twoPmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        twoPmElInput.style.display = 'none';
         twoPmBtn.style.visibility = 'hidden';
     } else {
         twoPmEl.style.backgroundColor = 'green';
@@ -141,7 +134,6 @@ function checkTime() {
         threePmEl.style.backgroundColor = 'red';
         threePmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        threePmElInput.style.display = 'none';
         threePmBtn.style.visibility = 'hidden';
     } else {
         threePmEl.style.backgroundColor = 'green';
@@ -156,7 +148,6 @@ function checkTime() {
         fourPmEl.style.backgroundColor = 'red';
         fourPmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        fourPmElInput.style.display = 'none';
         fourPmBtn.style.visibility = 'hidden';
     } else {
         fourPmEl.style.backgroundColor = 'green';
@@ -171,7 +162,6 @@ function checkTime() {
         fivePmEl.style.backgroundColor = 'red';
         fivePmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        fivePmElInput.style.display = 'none';
         fivePmBtn.style.visibility = 'hidden';
     } else {
         fivePmEl.style.backgroundColor = 'green';
@@ -185,7 +175,6 @@ function checkTime() {
         sixPmEl.style.backgroundColor = 'red';
         sixPmElInput.style.backgroundColor = 'red';
         // added display none below so that once time passes, you can no longer input a task and save task button disappears
-        sixPmElInput.style.display = 'none';
         sixPmBtn.style.visibility = 'hidden';
     } else {
         sixPmEl.style.backgroundColor = 'green';
